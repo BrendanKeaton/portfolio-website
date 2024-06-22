@@ -3,37 +3,31 @@ import {
   SiVercel,
   SiReact,
   SiFigma,
-  SiNotion,
   SiTailwindcss,
-  SiPython,
-  SiGithub,
-  SiJira,
-  SiJavascript,
-  SiPowerbi,
 } from "@icons-pack/react-simple-icons";
 import { motion } from "framer-motion";
 
-export default function Logos() {
-  const initial = { y: "-175px", opacity: 1 };
+export default function LogosSmall() {
+  const initial = { x: "-200px", opacity: 1 };
   const animate = {
-    y: ["-151px", "100vh"],
+    x: ["-220px", "100vw"],
     opacity: [1, 1, 1, 0],
   };
 
   return (
-    <div className="lg:ml-10 2xl:ml-32 h-screen z-10">
+    <div className="w-screen z-10 mt-12">
       <motion.div
         initial={initial}
         animate={animate}
         transition={{
-          duration: 15,
+          duration: 10,
           ease: "linear",
           repeat: Infinity,
         }}
       >
         <SiNextdotjs
           color="black"
-          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+          className="py-3 absolute bg-bk-white rounded-3xl w-20 h-20 sm:w-32 sm:h-32"
         />
       </motion.div>
 
@@ -41,15 +35,15 @@ export default function Logos() {
         initial={initial}
         animate={animate}
         transition={{
-          duration: 15,
+          duration: 10,
           ease: "linear",
-          delay: 3,
+          delay: 2,
           repeat: Infinity,
         }}
       >
         <SiFigma
           color="black"
-          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+          className="py-3 absolute bg-bk-white rounded-3xl w-20 h-20 sm:w-32 sm:h-32"
         />
       </motion.div>
 
@@ -57,15 +51,15 @@ export default function Logos() {
         initial={initial}
         animate={animate}
         transition={{
-          duration: 15,
+          duration: 10,
           ease: "linear",
-          delay: 6,
+          delay: 4,
           repeat: Infinity,
         }}
       >
         <SiReact
           color="#61DBFB"
-          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+          className="py-3 absolute bg-bk-white rounded-3xl w-20 h-20 sm:w-32 sm:h-32"
         />
       </motion.div>
 
@@ -73,15 +67,15 @@ export default function Logos() {
         initial={initial}
         animate={animate}
         transition={{
-          duration: 15,
+          duration: 10,
           ease: "linear",
-          delay: 9,
+          delay: 6,
           repeat: Infinity,
         }}
       >
         <SiVercel
           color="black"
-          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+          className="py-3 absolute bg-bk-white rounded-3xl w-20 h-20 sm:w-32 sm:h-32"
         />
       </motion.div>
 
@@ -89,15 +83,15 @@ export default function Logos() {
         initial={initial}
         animate={animate}
         transition={{
-          duration: 15,
+          duration: 10,
           ease: "linear",
-          delay: 12,
+          delay: 8,
           repeat: Infinity,
         }}
       >
         <SiTailwindcss
           color="#35bef8"
-          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+          className="py-3 absolute bg-bk-white rounded-3xl w-20 h-20 sm:w-32 sm:h-32"
         />
       </motion.div>
     </div>

@@ -1,10 +1,4 @@
 import {
-  SiNextdotjs,
-  SiVercel,
-  SiReact,
-  SiFigma,
-  SiNotion,
-  SiTailwindcss,
   SiPython,
   SiGithub,
   SiJira,
@@ -21,20 +15,36 @@ export default function Logos() {
   };
 
   return (
-    <div className="md:ml-4 2xl:ml-10 h-screen z-10">
+    <div className="h-screen z-10">
       <motion.div
         initial={initial}
         animate={animate}
         transition={{
           duration: 15,
           ease: "linear",
+          delay: 1.3,
           repeat: Infinity,
-          delay: 1.2,
         }}
       >
-        <SiNextdotjs
+        <SiPowerbi
+          color="#f6d958"
+          className="py-4 absolute bg-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+        />
+      </motion.div>
+
+      <motion.div
+        initial={initial}
+        animate={animate}
+        transition={{
+          duration: 15,
+          ease: "linear",
+          delay: 4.3,
+          repeat: Infinity,
+        }}
+      >
+        <SiPython
           color="black"
-          className="py-4 absolute bg-bk-white rounded-3xl w-10 h-10 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40"
+          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
         />
       </motion.div>
 
@@ -44,61 +54,44 @@ export default function Logos() {
         transition={{
           duration: 15,
           ease: "linear",
-          delay: 4,
+          delay: 7.3,
           repeat: Infinity,
         }}
       >
-        <SiFigma
+        <SiJira
+          color="#0052cc"
+          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+        />
+      </motion.div>
+
+      <motion.div
+        initial={initial}
+        animate={animate}
+        transition={{
+          duration: 15,
+          ease: "linear",
+          delay: 10.3,
+          repeat: Infinity,
+        }}
+      >
+        <SiJavascript
+          color="#f7df1e"
+          className="py-4 absolute bg-black rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
+        />
+      </motion.div>
+      <motion.div
+        initial={initial}
+        animate={animate}
+        transition={{
+          duration: 15,
+          ease: "linear",
+          repeat: Infinity,
+          delay: 13.3,
+        }}
+      >
+        <SiGithub
           color="black"
-          className="py-4 absolute bg-bk-white rounded-3xl w-10 h-10 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40"
-        />
-      </motion.div>
-
-      <motion.div
-        initial={initial}
-        animate={animate}
-        transition={{
-          duration: 15,
-          ease: "linear",
-          delay: 6.8,
-          repeat: Infinity,
-        }}
-      >
-        <SiReact
-          color="#61DBFB"
-          className="py-4 absolute bg-bk-white rounded-3xl w-10 h-10 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40"
-        />
-      </motion.div>
-
-      <motion.div
-        initial={initial}
-        animate={animate}
-        transition={{
-          duration: 15,
-          ease: "linear",
-          delay: 9.6,
-          repeat: Infinity,
-        }}
-      >
-        <SiVercel
-          color="black"
-          className="py-4 absolute bg-bk-white rounded-3xl w-10 h-10 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40"
-        />
-      </motion.div>
-
-      <motion.div
-        initial={initial}
-        animate={animate}
-        transition={{
-          duration: 15,
-          ease: "linear",
-          delay: 12.4,
-          repeat: Infinity,
-        }}
-      >
-        <SiTailwindcss
-          color="#35bef8"
-          className="py-4 absolute bg-bk-white rounded-3xl w-10 h-10 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40"
+          className="py-4 absolute bg-bk-white rounded-3xl lg:w-36 lg:h-36 xl:w-40 xl:h-40"
         />
       </motion.div>
     </div>
