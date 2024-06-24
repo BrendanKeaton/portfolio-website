@@ -68,13 +68,13 @@ export default function Experiences() {
   ];
 
   const resonitePara =
-    "I currently work at Resonite as a fullstack developer. My work at Resonite began a few months after the company was conceived. Due to this, I have learned the basics of how all of the moving pieces of a business work together. Additionally, I have worked individually with clients, taking them through the entire development life cycle, from a concept to a finished product.";
+    "As one of the first hires at Resonite, I've been a key fullstack developer since the company's early days. This unique position has given me insight into the intricacies of business operations from the ground up. I've taken full ownership of client projects, guiding them through the entire development lifecycle - from initial concept to polished final product. My hands-on experience spans all aspects of software development and client management, making me adept at turning ideas into reality while navigating the complexities of a growing business.";
 
   const AZPara =
-    "During my time at AstraZeneca, my focus was on data automation and cleaning. To this end, I implemented a script in Python that pulls and cleans data, and then uses that data to create auto-generated reports. These reports are run quarterly, and save 200+ hours of manual labor yearly. Alongside the prior project, I used the SalesForce API and DAX queries within PowerBI to create dashboards displaying relevant metrics to improve efficiency across multiple teams.";
+    "At AstraZeneca, I spearheaded data automation initiatives that dramatically improved efficiency, most notably the development of a Python script for automated data extraction, cleaning, and report generation, saving over 200 hours of manual labor annually. I also leveraged the Salesforce API and DAX queries in Power BI to create dynamic dashboards, providing critical metrics that boosted efficiency across multiple teams. Another primary project focused on streamlining quarterly reporting processes, enabling data-driven decision-making and freeing up resources for more critical tasks.";
 
   const depElectionsPara =
-    "My main task at the the Virginia State Board of Elections was to create a script within Excel to generate daily reports, saving team members 2 hours of manual data collection daily. Alongside this, I worked with ArcGIS to find and fix population data by communicating directly with localities.";
+    "At the Virginia State Board of Elections, I was asked to improve efficiency and data accuracy. To accomplish this, I first engineered an Excel script for automated daily report generation, saving the team 2 hours of manual data collection every day - equivalent to 500+ hours annually. Additionally, I leveraged ArcGIS to identify and address population data discrepancies, collaborating directly with local authorities to ensure data integrity.";
 
   return (
     <motion.ul
