@@ -40,8 +40,11 @@ export default function Projects() {
           PROJECTS
         </span>
       </motion.li>
-      <div className="md:grid md:grid-cols-2 2xl:grid-cols-3 bg-bk-white gap-6 xl:gap-4 flex flex-col items-center justify-between">
-        <motion.li className="item flex-1" variants={item}>
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 bg-bk-white gap-6 flex flex-col items-center justify-center">
+        <motion.li
+          className="item flex-1 w-full flex items-center justify-center"
+          variants={item}
+        >
           <Card
             alt="Logo of Statistex, a data driven game development company."
             src="/assets/stat.png"
@@ -52,7 +55,10 @@ export default function Projects() {
             w={800}
           />
         </motion.li>
-        <motion.li className="item flex-1" variants={item}>
+        <motion.li
+          className="item flex-1 w-full flex items-center justify-center"
+          variants={item}
+        >
           <Card
             alt="Logo of Rex Regum Qeon (RRQ), an Indonesian gaming organization."
             src="/assets/RRQ.png"
@@ -63,7 +69,10 @@ export default function Projects() {
             linkColor="#FBFBFB"
           />
         </motion.li>
-        <motion.li className="item flex-1" variants={item}>
+        <motion.li
+          className="item flex-1 w-full flex items-center justify-center"
+          variants={item}
+        >
           <Card
             alt="Name Brendan Keaton, for this website as a project."
             src="/assets/Brendan_Keaton.png"

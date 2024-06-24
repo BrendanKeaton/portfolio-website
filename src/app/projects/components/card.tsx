@@ -39,7 +39,7 @@ export default function Card({
   return (
     <motion.div whileHover={{ scale: 1.05 }}>
       <div
-        className={`w-[80vw] h-[80vw] md:w-[300px] md:h-[250px] xl:w-[490px] xl:h-[375px] relative items-center px-6 justify-center flex ${bgColor} shadow-lg lg:shadow-xl rounded-3xl`}
+        className={`w-[80vw] h-[80vw] md:w-[300px] md:h-[250px] 2xl:w-[490px] 2xl:h-[375px] relative items-center px-6 justify-center flex ${bgColor} shadow-lg lg:shadow-xl rounded-3xl`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleClick}
