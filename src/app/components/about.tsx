@@ -33,7 +33,7 @@ export default function About() {
     "Hello, I'm Brendan Keaton, a passionate fullstack developer and data scientist. I graduated with a degree in Computer Science and a minor in Data Science from the University of Virginia in December 2023. I have had the opportunity to intern as a Data Analyst at three different organizations, where I honed my skills in data visualization, statistical analysis, and database management. Outside of work, I enjoy staying updated with the latest trends in technology and continuously expanding my skill set while working on personal projects.";
 
   return (
-    <div className="justify-between container px-4 mx-auto lg:h-screen bg-bk-white z-30 relative flex flex-col md:flex-row pt-10 md:pt-32">
+    <div className="justify-between container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col md:flex-row pt-10 md:pt-32">
       <motion.ul
         ref={containerRef}
         className="flex flex-col md:flex-row container"
@@ -43,7 +43,7 @@ export default function About() {
       >
         <motion.li className="item flex-1" variants={item}>
           <div className="flex flex-col pb-8 md:pb-0">
-            <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none">
+            <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none pb-1 md:pb-6">
               ABOUT ME
             </span>
             <span className="font-light text-bk-blue text-md 2xl:text-lg leading-snug md:max-w-3xl">
