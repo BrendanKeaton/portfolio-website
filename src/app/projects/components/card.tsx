@@ -9,32 +9,57 @@ import Link from "next/link";
 interface CardProps {
   src: string;
   alt: string;
-  bgColor: string;
+  bgColor?: string;
+  link: string;
+  para?: string;
+  fontColor?: string;
+  h?: number;
+  w?: number;
+  linkColor?: string;
 }
 
-export default function Card({ src, alt, bgColor }: CardProps) {
+export default function Card({
+  src,
+  alt,
+  bgColor = "bg-bk-blue",
+  link,
+  para = "Default paragraph text",
+  fontColor = "text-white",
+  h = 200,
+  w = 200,
+  linkColor = "#FBFBFB",
+}: CardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
 
   return (
     <motion.div whileHover={{ scale: 1.05 }}>
       <div
-        className={`w-[490px] h-[375px] relative items-center px-6 justify-center flex ${bgColor} shadow-2xl rounded-3xl`}
+        className={`w-[80vw] h-[80vw] md:w-[300px] md:h-[250px] xl:w-[490px] xl:h-[375px] relative items-center px-6 justify-center flex ${bgColor} shadow-lg lg:shadow-xl rounded-3xl`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={handleClick}
       >
-        {isHovered ? (
+        {isHovered || isClicked ? (
           <div className="flex flex-col items-center">
-            <Image src={src} height={800} width={800} alt={alt} />
-            <p className="text-white text-center pb-4">
-              Developed an application using the Overwolf API to aid in data
-              driven improvement in Valorant.
+            <div className={`max-w-[40vw] lg:max-w-[${w}]`}>
+              <Image src={src} height={h} width={w} alt={alt} />
+            </div>
+            <p
+              className={`text-center text-sm lg:text-md ${fontColor} pb-1 lg:pb-4`}
+            >
+              {para}
             </p>
-            <Link href="https://statistex.dev/">
-              <GoLinkExternal fill="#FBFBFB" size={32} />
+            <Link href={link}>
+              <GoLinkExternal fill={linkColor} size={32} />
             </Link>
           </div>
         ) : (
-          <Image src={src} height={800} width={800} alt={alt} />
+          <Image src={src} height={h} width={w} alt={alt} />
         )}
       </div>
     </motion.div>
