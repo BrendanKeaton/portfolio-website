@@ -26,7 +26,7 @@ export default function Experiences() {
   };
 
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, amount: 0.4 });
+  const isInView = useInView(containerRef, { once: true, amount: 0.1 });
 
   const resoniteSkills: string[] = [
     "React",
