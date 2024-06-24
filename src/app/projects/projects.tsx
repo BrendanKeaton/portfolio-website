@@ -35,12 +35,12 @@ export default function Projects() {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
-      <motion.li className="item flex-1" variants={item}>
-        <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none pb-4 md:pb-6 text-center">
+      <motion.li className="item flex-1 pb-4 md:pb-10" variants={item}>
+        <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none text-center">
           PROJECTS
         </span>
       </motion.li>
-      <div className="md:grid md:grid-cols-2 2xl:grid-cols-3 bg-bk-white xl:gap-4 flex flex-col items-center justify-between">
+      <div className="md:grid md:grid-cols-2 2xl:grid-cols-3 bg-bk-white gap-6 xl:gap-4 flex flex-col items-center justify-between">
         <motion.li className="item flex-1" variants={item}>
           <Card
             alt="Logo of Statistex, a data driven game development company."
@@ -56,11 +56,11 @@ export default function Projects() {
           <Card
             alt="Logo of Rex Regum Qeon (RRQ), an Indonesian gaming organization."
             src="/assets/RRQ.png"
-            bgColor="bg-bk-white"
+            bgColor="bg-bk-blue"
             link="https://x.com/VoxizeVAL"
             para="Worked as a data analyst for an APAC based Valorant team. Developed a small following on Twitter through my data based content."
-            fontColor="text-bk-blue"
-            linkColor="#222E50"
+            fontColor="text-bk-white"
+            linkColor="#FBFBFB"
           />
         </motion.li>
         <motion.li className="item flex-1" variants={item}>
@@ -68,10 +68,12 @@ export default function Projects() {
             alt="Name Brendan Keaton, for this website as a project."
             src="/assets/Brendan_Keaton.png"
             bgColor="bg-bk-blue"
-            link="BrendanKeaton.dev"
+            link="https://github.com/BrendanKeaton/portfolio-website"
             para="Used Nextjs, React, Tailwindcss, and Framer Motion to create this portfolio website."
             fontColor="text-bk-white"
             linkColor="#FBFBFB"
+            h={350}
+            w={350}
           />
         </motion.li>
       </div>

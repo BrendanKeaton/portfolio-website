@@ -43,10 +43,10 @@ export default function About() {
       >
         <motion.li className="item flex-1" variants={item}>
           <div className="flex flex-col pb-8 md:pb-0">
-            <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none pb-1 md:pb-6">
+            <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none pb-1 md:pb-6 text-center sm:text-start">
               ABOUT ME
             </span>
-            <span className="font-light text-bk-blue text-md 2xl:text-lg leading-snug md:max-w-3xl">
+            <span className="font-light text-bk-blue text-md 2xl:text-lg leading-snug md:max-w-3xl text-start">
               {para}
             </span>
           </div>
