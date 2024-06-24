@@ -5,7 +5,7 @@ import Experiences from "./experiences/experiences";
 
 export default function Home() {
   return (
-    <div className="max-w-full overflow-x-hidden">
+    <div className="pb-48 max-w-full overflow-x-hidden">
       <Hero />
       <About />
       <Projects />

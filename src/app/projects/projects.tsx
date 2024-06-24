@@ -26,7 +26,7 @@ export default function Projects() {
   };
 
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true });
+  const isInView = useInView(containerRef, { once: true, amount: 0.4 });
   return (
     <motion.ul
       ref={containerRef}

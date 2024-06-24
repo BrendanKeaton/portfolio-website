@@ -27,10 +27,10 @@ export default function About() {
   };
 
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true });
+  const isInView = useInView(containerRef, { once: true, amount: 0.4 });
 
   const para =
-    "Hello, I'm Brendan Keaton, a passionate fullstack developer and data scientist. I graduated with a degree in Computer Science and a minor in Data Science from the University of Virginia in December 2023. I have had the opportunity to intern as a Data Analyst at three different organizations, where I honed my skills in data visualization, statistical analysis, and database management. Outside of work, I enjoy staying updated with the latest trends in technology and continuously expanding my skill set while working on personal projects.";
+    "Hello, I'm Brendan Keaton, a fullstack developer and data scientist. I graduated with a degree in Computer Science and a minor in Data Science from the University of Virginia in December 2023. I have had the opportunity to intern as a Data Analyst at three different organizations, where I honed my skills in data visualization, statistical analysis, and database management. Outside of work, I enjoy staying updated with the latest trends in technology and continuously expanding my skill set while working on personal projects.";
 
   return (
     <div className="justify-between container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col md:flex-row pt-10 md:pt-32">
