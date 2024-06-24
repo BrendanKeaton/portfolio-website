@@ -30,7 +30,7 @@ export default function Projects() {
   return (
     <motion.ul
       ref={containerRef}
-      className="container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col pt-10 md:pt-32"
+      className="container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col pt-10 md:pt-32 text-center"
       variants={container}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
@@ -40,7 +40,7 @@ export default function Projects() {
           PROJECTS
         </span>
       </motion.li>
-      <div className="md:grid md:grid-cols-2 2xl:grid-cols-3 bg-bk-white xl:gap-4 flex flex-col items-center justify-center">
+      <div className="md:grid md:grid-cols-2 2xl:grid-cols-3 bg-bk-white xl:gap-4 flex flex-col items-center justify-between">
         <motion.li className="item flex-1" variants={item}>
           <Card
             alt="Logo of Statistex, a data driven game development company."
@@ -61,6 +61,17 @@ export default function Projects() {
             para="Worked as a data analyst for an APAC based Valorant team. Developed a small following on Twitter through my data based content."
             fontColor="text-bk-blue"
             linkColor="#222E50"
+          />
+        </motion.li>
+        <motion.li className="item flex-1" variants={item}>
+          <Card
+            alt="Name Brendan Keaton, for this website as a project."
+            src="/assets/Brendan_Keaton.png"
+            bgColor="bg-bk-blue"
+            link="BrendanKeaton.dev"
+            para="Used Nextjs, React, Tailwindcss, and Framer Motion to create this portfolio website."
+            fontColor="text-bk-white"
+            linkColor="#FBFBFB"
           />
         </motion.li>
       </div>

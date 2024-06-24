@@ -50,7 +50,7 @@ export default function Card({
               <Image src={src} height={h} width={w} alt={alt} />
             </div>
             <p
-              className={`text-center text-sm lg:text-md ${fontColor} pb-1 lg:pb-4`}
+              className={`text-center text-sm lg:text-md ${fontColor} pb-1 lg:pb-4 pt-1 lg:pt-4`}
             >
               {para}
             </p>
