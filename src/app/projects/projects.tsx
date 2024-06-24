@@ -40,9 +40,9 @@ export default function Projects() {
           PROJECTS
         </span>
       </motion.li>
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 bg-bk-white gap-6 flex flex-col items-center justify-center">
+      <div className="min-h-[350px] md:grid md:grid-cols-2 lg:grid-cols-3 bg-bk-white gap-6 flex flex-col items-center justify-center">
         <motion.li
-          className="item flex-1 w-full flex items-center justify-center"
+          className="item flex-1 w-full flex items-center justify-center h-full"
           variants={item}
         >
           <Card
@@ -56,7 +56,7 @@ export default function Projects() {
           />
         </motion.li>
         <motion.li
-          className="item flex-1 w-full flex items-center justify-center"
+          className="item flex-1 w-full flex items-center justify-center h-full"
           variants={item}
         >
           <Card
@@ -70,7 +70,7 @@ export default function Projects() {
           />
         </motion.li>
         <motion.li
-          className="item flex-1 w-full flex items-center justify-center"
+          className="item flex-1 w-full flex items-center justify-center h-full"
           variants={item}
         >
           <Card

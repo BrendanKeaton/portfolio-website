@@ -16,7 +16,7 @@ export default function Exp({
   position,
 }: CardProps) {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-2 max-w-[80%]">
+    <div className="flex flex-col md:grid md:grid-cols-2 px-4">
       <div className="flex flex-col">
         <span className="font-semibold text-bk-blue text-lg 2xl:text-xl leading-none text-start">
           {position}

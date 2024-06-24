@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function SocialsMobile() {
   return (
-    <div className="md:hidden flex absolute flex-row gap-4 mb-16 place-self-end">
+    <div className="lg:hidden items-center justify-center pt-7 gap-4 pl-3 flex flex-row">
       <Link href="https://www.linkedin.com/in/brendankeaton/">
         <BsLinkedin color="#FBFBFB" size={32} />
       </Link>

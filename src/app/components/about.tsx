@@ -58,7 +58,7 @@ export default function About() {
               src="/assets/Brendan_Keaton.jpg"
               height={800}
               width={800}
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
               alt="Picture of Brendan Keaton, in the about me section"
             />
           </div>

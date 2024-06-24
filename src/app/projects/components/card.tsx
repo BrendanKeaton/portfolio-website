@@ -37,31 +37,28 @@ export default function Card({
   };
 
   return (
-    <motion.div whileHover={{ scale: 1.05 }}>
-      <div
-        className={`w-[80vw] h-[80vw] md:w-[300px] md:h-[250px] 2xl:w-[490px] 2xl:h-[375px] relative items-center px-6 justify-center flex ${bgColor} shadow-lg lg:shadow-xl rounded-3xl`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        onClick={handleClick}
-      >
-        {isHovered || isClicked ? (
-          <div className="flex flex-col items-center">
-            <div className={`max-w-[40vw] lg:max-w-[${w}]`}>
-              <Image src={src} height={h} width={w} alt={alt} />
-            </div>
-            <p
-              className={`text-center text-sm lg:text-md ${fontColor} pb-1 lg:pb-4 pt-1 lg:pt-4`}
-            >
-              {para}
-            </p>
-            <Link href={link}>
-              <GoLinkExternal fill={linkColor} size={32} />
-            </Link>
-          </div>
-        ) : (
+    <motion.div
+      className={`w-full h-full relative items-center px-6 justify-center flex ${bgColor} shadow-lg lg:shadow-xl rounded-3xl`}
+      whileHover={{ scale: 1.05 }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onClick={handleClick}
+    >
+      {isHovered || isClicked ? (
+        <div className="flex flex-col items-center">
           <Image src={src} height={h} width={w} alt={alt} />
-        )}
-      </div>
+          <p
+            className={`text-center text-sm lg:text-md ${fontColor} pb-1 lg:pb-4 pt-1 lg:pt-4`}
+          >
+            {para}
+          </p>
+          <Link href={link}>
+            <GoLinkExternal fill={linkColor} size={32} className="pb-2" />
+          </Link>
+        </div>
+      ) : (
+        <Image src={src} height={h} width={w} alt={alt} />
+      )}
     </motion.div>
   );
 }
