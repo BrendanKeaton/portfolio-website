@@ -3,7 +3,6 @@ import {
   SiVercel,
   SiReact,
   SiFigma,
-  SiNotion,
   SiTailwindcss,
   SiPython,
   SiGithub,
@@ -33,7 +32,7 @@ export default function Logos() {
           initial={initial}
           animate={animate}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
             repeat: Infinity,
           }}
@@ -48,9 +47,9 @@ export default function Logos() {
           initial={initial}
           animate={animate}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 3,
+            delay: 2,
             repeat: Infinity,
           }}
         >
@@ -64,9 +63,9 @@ export default function Logos() {
           initial={initial}
           animate={animate}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 6,
+            delay: 4,
             repeat: Infinity,
           }}
         >
@@ -80,9 +79,9 @@ export default function Logos() {
           initial={initial}
           animate={animate}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 9,
+            delay: 6,
             repeat: Infinity,
           }}
         >
@@ -96,9 +95,9 @@ export default function Logos() {
           initial={initial}
           animate={animate}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 12,
+            delay: 8,
             repeat: Infinity,
           }}
         >
@@ -113,9 +112,9 @@ export default function Logos() {
           initial={initial2}
           animate={animate2}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 1.3,
+            delay: 1,
             repeat: Infinity,
           }}
         >
@@ -129,9 +128,9 @@ export default function Logos() {
           initial={initial2}
           animate={animate2}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 4.3,
+            delay: 3,
             repeat: Infinity,
           }}
         >
@@ -145,9 +144,9 @@ export default function Logos() {
           initial={initial2}
           animate={animate2}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 7.3,
+            delay: 5,
             repeat: Infinity,
           }}
         >
@@ -161,9 +160,9 @@ export default function Logos() {
           initial={initial2}
           animate={animate2}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
-            delay: 10.3,
+            delay: 7,
             repeat: Infinity,
           }}
         >
@@ -176,10 +175,10 @@ export default function Logos() {
           initial={initial2}
           animate={animate2}
           transition={{
-            duration: 15,
+            duration: 10,
             ease: "linear",
             repeat: Infinity,
-            delay: 13.3,
+            delay: 9,
           }}
         >
           <SiGithub

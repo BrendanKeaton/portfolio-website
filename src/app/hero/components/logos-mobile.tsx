@@ -13,15 +13,15 @@ import {
 import { motion } from "framer-motion";
 
 export default function LogosMobile() {
-  const initial = { x: "-180px", opacity: 1 };
+  const initial = { x: "-150px", opacity: 1 };
   const animate = {
-    x: ["-180px", "100vw"],
+    x: ["-150px", "100vw"],
     opacity: [1, 1, 1, 0],
   };
 
-  const initial2 = { x: "-180px", opacity: 1 };
+  const initial2 = { x: "-150px", opacity: 1 };
   const animate2 = {
-    x: ["-180px", "100vw"],
+    x: ["-150px", "100vw"],
     opacity: [1, 1, 1, 0],
   };
 
