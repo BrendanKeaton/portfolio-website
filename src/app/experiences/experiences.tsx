@@ -26,7 +26,7 @@ export default function Experiences() {
   };
 
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, amount: 0.1 });
+  const isInView = useInView(containerRef, { once: true, amount: 0.999 });
 
   const resoniteSkills: string[] = [
     "React",
@@ -79,7 +79,7 @@ export default function Experiences() {
   return (
     <motion.ul
       ref={containerRef}
-      className="container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col pt-10 md:pt-32 text-center"
+      className="container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col pt-10 md:pt-16 text-center"
       variants={container}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}

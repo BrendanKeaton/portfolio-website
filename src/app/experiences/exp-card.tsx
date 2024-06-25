@@ -31,7 +31,7 @@ export default function Exp({
       <span className="font-light text-bk-blue text-md 2xl:text-lg leading-snug pb-6 text-start">
         {para}
       </span>
-      <ul className="flex flex-wrap md:justify-end gap-x-2 justify-self-end max-w-sm content-start gap-y-2">
+      <ul className="flex font-semibold flex-wrap md:justify-end gap-x-2 justify-self-end max-w-sm content-start gap-y-2">
         {skills.map((item, index) => (
           <li
             className="px-4 py-1 bg-bk-off-blue text-bk-blue rounded-xl text-center"

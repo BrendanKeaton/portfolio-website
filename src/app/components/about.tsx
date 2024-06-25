@@ -30,7 +30,7 @@ export default function About() {
   const isInView = useInView(containerRef, { once: true, amount: 0.2 });
 
   const para =
-    "Hello! I'm Brendan Keaton, a fullstack developer and data scientist. As a University of Virginia graduate with a Computer Science degree and Data Science minor, I have a powerful combination of fullstack development and data science skills. My experience tackling complex data sets across three data analyst internships has honed my ability to extract actionable insights through advanced visualization techniques and statistical analysis. I thrive on exploring new technologies, continuously innovating through personal projects and staying ahead of industry trends.";
+    "Hello! I'm Brendan Keaton. As a University of Virginia graduate with a Computer Science degree and Data Science minor, I have a powerful combination of fullstack development and data science skills. My experience tackling complex data sets across three data analyst internships has honed my ability to extract actionable insights through advanced visualization techniques and statistical analysis. I thrive on exploring new technologies, continuously innovating through personal projects and staying ahead of industry trends.";
 
   return (
     <div className="justify-between container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col md:flex-row pt-10 md:pt-32">
