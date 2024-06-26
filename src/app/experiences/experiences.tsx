@@ -26,13 +26,12 @@ export default function Experiences() {
   };
 
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, amount: 0.999 });
+  const isInView = useInView(containerRef, { once: true, amount: 0 });
 
   const resoniteSkills: string[] = [
     "React",
     "Vercel",
     "Git",
-    "TailwindCSS",
     "Next.js",
     "GoLang",
     "TailwindCSS",
@@ -84,11 +83,9 @@ export default function Experiences() {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
-      <motion.li className="item flex-1 pb-4 md:pb-10" variants={item}>
-        <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none text-center">
-          EXPERIENCE
-        </span>
-      </motion.li>
+      <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none text-center pb-4 md:pb-10">
+        EXPERIENCE
+      </span>
       <motion.li
         className="flex flex-col gap-y-16 items-center justify-center"
         variants={item}
