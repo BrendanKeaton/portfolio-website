@@ -40,6 +40,9 @@ export default function Projects() {
   const containerRefMob4 = useRef(null);
   const isInViewMob4 = useInView(containerRefMob4, { once: true, amount: 0.2 });
 
+  const containerRefMob5 = useRef(null);
+  const isInViewMob5 = useInView(containerRefMob5, { once: true, amount: 0.2 });
+
   return (
     <div>
       <motion.ul
@@ -99,6 +102,20 @@ export default function Projects() {
               w={350}
             />
           </motion.li>
+          <motion.li
+            className="item flex-1 w-full flex items-center justify-center h-full"
+            variants={item}
+          >
+            <Card
+              alt="University of Virginia logo"
+              src="/assets/UVA-Logo.png"
+              bgColor="bg-bk-blue"
+              link="https://libraetd.lib.virginia.edu/public_view/j38608134"
+              para="Researched recommendation algorithms from both an ethical and technical standpoint for my senior thesis at the University of Virginia."
+              fontColor="text-bk-white"
+              linkColor="#FBFBFB"
+            />
+          </motion.li>
         </div>
       </motion.ul>
 
@@ -154,7 +171,7 @@ export default function Projects() {
             animate={isInViewMob4 ? "visible" : "hidden"}
           >
             <Card
-              alt="Name Brendan Keaton, for this website as a project."
+              alt="Name Brendan Keaton, for this website as a software development project."
               src="/assets/Brendan_Keaton.png"
               bgColor="bg-bk-blue"
               link="https://github.com/BrendanKeaton/portfolio-website"
@@ -163,6 +180,22 @@ export default function Projects() {
               linkColor="#FBFBFB"
               h={350}
               w={350}
+            />
+          </motion.div>
+          <motion.div
+            ref={containerRefMob5}
+            variants={container}
+            initial="hidden"
+            animate={isInViewMob5 ? "visible" : "hidden"}
+          >
+            <Card
+              alt="University of Virginia logo"
+              src="/assets/UVA-Logo.png"
+              bgColor="bg-bk-blue"
+              link="https://libraetd.lib.virginia.edu/public_view/j38608134"
+              para="Researched recommendation algorithms from both an ethical and technical standpoint for my senior thesis at the University of Virginia."
+              fontColor="text-bk-white"
+              linkColor="#FBFBFB"
             />
           </motion.div>
         </div>
