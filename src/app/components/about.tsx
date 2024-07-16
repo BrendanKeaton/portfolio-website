@@ -30,7 +30,7 @@ export default function About() {
   const isInView = useInView(containerRef, { once: true, amount: 0.2 });
 
   const para =
-    "Hello! I'm Brendan Keaton. As a University of Virginia graduate with a Computer Science degree and Data Science minor, I have a powerful combination of fullstack development and data science skills. My experience tackling complex data sets across three data analyst internships has honed my ability to extract actionable insights through advanced visualization techniques and statistical analysis. I thrive on exploring new technologies, continuously innovating through personal projects and staying ahead of industry trends.";
+    "Hello! I'm Brendan Keaton. As a University of Virginia graduate with a Computer Science degree and Data Science minor, I have a powerful combination of fullstack development and data science skills. My experience tackling complex data sets across three data analyst roles has honed my ability to extract actionable insights through advanced visualization techniques and statistical analysis. I thrive on exploring new technologies, continuously innovating through personal projects and staying ahead of industry trends.";
 
   return (
     <div className="justify-between container px-4 mx-auto pb-10 bg-bk-white z-30 relative flex flex-col md:flex-row pt-10 md:pt-32">
@@ -43,7 +43,7 @@ export default function About() {
       >
         <motion.li className="item flex-1" variants={item}>
           <div className="flex flex-col pb-8 md:pb-0">
-            <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none pb-1 md:pb-6 text-center sm:text-start">
+            <span className="font-semibold text-bk-blue text-xl sm:text-xl 2xl:text-2xl leading-none md:pb-6 text-center sm:text-start pb-6">
               ABOUT ME
             </span>
             <span className="font-light text-bk-blue text-md 2xl:text-lg leading-snug md:max-w-3xl text-start">
